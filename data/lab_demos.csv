@@ -20,6 +20,10 @@ Belikov et al 2012,2012,655,0,4.40E-07,1.2,2,1.2,,ACE,PIAA,clear,static,1 BMC,an
 Belikov et al 2014,2014,655,0,9.70E-08,2,6,1.2,2.90E-07,HCIT,PIAA,clear,static,1 BMC,annular arc,40,https://doi.org/10.1117/12.2057028
 Belikov et al 2014,2014,655,10,1.40E-06,2,6,1.2,,HCIT,PIAA,clear,static,1 BMC,annular arc,40,https://doi.org/10.1117/12.2057028
 Belikov et al 2022,2022,650,10,1.90E-08,3.5,8,3.5,,HCIT,PIAACMC,"segmented, on-axis",static,1 BMC,D,41,https://doi.org/10.1117/12.2630474
-Soummer et al 2022,2022,640,0,2.00E-08,2,13,2,,HiCAT,PALPC,"segmented, off-axis",static,2 BMC,D,,https://doi.org/10.1117/12.2630444
+Belikov et al 2022,2022,675,0,9.00E-09,4,8,4,1.10E-07,HCIT,PIAACMC,"segmented, on-axis",static,1 BMC,D,41,https://doi.org/10.1117/12.2630474
+Soummer et al 2022,2022,640,0,2.00E-08,2,13,2,,HiCAT,PAPLC,"segmented, off-axis",static,2 BMC,D,,https://doi.org/10.1117/12.2630444
 Soummer et al 2022,2022,640,0,2.00E-08,4.6,10,4.6,,HiCAT,Lyot,"segmented, off-axis",static,2 BMC,annulus,,https://doi.org/10.1117/12.2630444
 Soummer et al 2022,2022,640,0,5.30E-08,4.6,10,4.6,,HiCAT,Lyot,"segmented, off-axis",dynamic,2 BMC,annulus,,https://doi.org/10.1117/12.2630444
+Soummer et al 2021,2021,640,6,5.00E-07,4.6,10,4.6,,HiCAT,APLC,"segmented, off-axis",static,2 BMC,annulus,,
+Trauger and Traub 2007,2007,,0,6.00E-10,4,10,4,,HCIT,Lyot,clear,static,1 AOX,D,,https://doi.org/10.1038/nature05729
+Trauger and Traub 2007,2007,,10,4.00E-09,4,10,4,,HCIT,Lyot,clear,static,1 AOX,D,,https://doi.org/10.1038/nature05729
