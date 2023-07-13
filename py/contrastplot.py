@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from astropy.table import Table
 import numpy as np
+from matplotlib.ticker import ScalarFormatter
 
 version = "2023.07.01"
 output_plot_file = f"Contrast_lab_demos_{version}.png"
@@ -125,28 +126,25 @@ plt.text(
     rotation="vertical",
 )
 
-
-# Add additional axis
-ax2 = ax.twiny()
-
+# convert from lambda/D to milliarcseconds on a 6 meter and 640 nm
 lDtomas = 640e-9 / 6 * 180 / np.pi * 3600 * 1000
 
 
-# convert from lambda/D to milliarcseconds on a 6 meter and 640 nm
-def tick_function(X):
-    V = X * lDtomas
-    return ["%.f" % z for z in V]
+def ldtomas(x):
+    return x * lDtomas
 
 
-ax2.set_xlim(ax.get_xlim())
+def mastold(x):
+    return x / lDtomas
 
-new_tick_locations = np.array([50.0, 500.0, 1000.0]) / lDtomas
 
-
-ax2.set_xticks(new_tick_locations)
-ax2.set_xticklabels(tick_function(new_tick_locations))
+# Add additional axis
+ax2 = ax.secondary_xaxis("top", functions=(ldtomas, mastold))
 ax2.set_xlabel("Angle [mas] on a 6m telescope at 640 nm")
 
+# Do this to get rid of exponential formatted axis labels:
+for axis in [ax.xaxis, ax2.xaxis]:
+    axis.set_major_formatter(ScalarFormatter())
 
 plt.suptitle("Starlight suppression broadband lab demonstrations")
 plt.savefig(output_plot_file)
