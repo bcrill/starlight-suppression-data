@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from astropy.table import Table
 import numpy as np
 
-version = "2023.03.01"
+version = "2023.07.01"
 output_plot_file = f"Contrast_lab_demos_{version}.png"
 output_readme_file = f"README_Contrast_lab_demos_{version}.txt"
 
@@ -14,6 +14,7 @@ fnames = [
     "VVC_635nm_twoAOXDMs_clearPupil_v2.csv",
     "PIAACMC_650nm_Belikov2022_BB.csv",
     "VVC_650nm_oneBMCDM_segPupil.csv",
+    "PAPLC_HiCAT.csv",
 ]
 
 
