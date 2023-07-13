@@ -7,11 +7,11 @@
 # - {courtesy: Emiel Por}
 # - {testbed: HiCAT}
 # - {url: --}
-# - {reference: Por et al (2023) in prep}
+# - {reference: Por et al 2023 in prep}
 # - {color: magenta}
 # - {pupil: segmented}
 # - {ls: --}
-# - {wl: 660 nm}
+# - {wl: 660}
 # - {bp_pct: '10'}
 # - {DM: 1 BMC}
 # - {coronagraph: PAPLC}
