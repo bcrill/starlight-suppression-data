@@ -6,7 +6,7 @@
 # meta: !!omap
 # - {reference: Belikov et al. 2022}
 # - {url: 'https://doi.org/10.1117/12.2630474'}
-# - {pupil: segmented/obscured}
+# - {pupil: obstructed+segmented}
 # - {color: green}
 # - {ls: -.}
 # - {courtesy: Rus Belikov}
