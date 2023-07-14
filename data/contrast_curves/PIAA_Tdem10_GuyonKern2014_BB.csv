@@ -1,0 +1,45 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: x, unit: lambda/D, datatype: float64}
+# - {name: y, unit: normI, datatype: float64}
+# meta: !!omap
+# - {reference: Guyon et al. 2014}
+# - {url: ''}
+# - {pupil: clear}
+# - {color: cyan}
+# - {ls: -}
+# - {courtesy: Brian Kern}
+# - {bp_pct: 10}
+# - {coronagraph: PIAA}
+# - {wl: 800}
+# - {DM: 1 BMC}
+# - {testbed: HCIT}
+# schema: astropy-2.0
+x y
+1.99 2.28E-08
+2.15 2.28E-08
+2.15 1.68E-08
+2.31 1.68E-08
+2.31 1.36E-08
+2.47 1.36E-08
+2.47 1.13E-08
+2.63 1.13E-08
+2.63 1.19E-08
+2.79 1.19E-08
+2.79 1.12E-08
+2.95 1.12E-08
+2.95 1.03E-08
+3.11 1.03E-08
+3.11 1.01E-08
+3.26 1.01E-08
+3.26 9.59E-09
+3.42 9.59E-09
+3.42 8.75E-09
+3.58 8.75E-09
+3.58 6.98E-09
+3.74 6.98E-09
+3.74 6.55E-09
+3.90 6.55E-09
+3.90 7.53E-09
+4.06 7.53E-09

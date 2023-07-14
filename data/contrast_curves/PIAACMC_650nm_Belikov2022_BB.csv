@@ -6,9 +6,9 @@
 # meta: !!omap
 # - {reference: Belikov et al. 2022}
 # - {url: 'https://doi.org/10.1117/12.2630474'}
-# - {pupil: segmented}
+# - {pupil: segmented/obscured}
 # - {color: green}
-# - {ls: --}
+# - {ls: -.}
 # - {courtesy: Rus Belikov}
 # - {bp_pct: 10}
 # - {coronagraph: PIAACMC}

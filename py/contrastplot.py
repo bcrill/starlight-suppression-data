@@ -3,7 +3,7 @@ from astropy.table import Table
 import numpy as np
 from matplotlib.ticker import ScalarFormatter
 
-version = "2023.07.01"
+version = "2023.07.14"
 output_plot_file = f"Contrast_lab_demos_{version}.png"
 output_readme_file = f"README_Contrast_lab_demos_{version}.txt"
 
@@ -15,6 +15,7 @@ fnames = [
     "VVC_635nm_twoAOXDMs_clearPupil_v2.csv",
     "PIAACMC_650nm_Belikov2022_BB.csv",
     "VVC_650nm_oneBMCDM_segPupil.csv",
+    "PIAA_Tdem10_GuyonKern2014_BB.csv",
     "PAPLC_HiCAT.csv",
 ]
 
@@ -51,7 +52,12 @@ for fname in fnames:
 
     readmestr = (
         f"* {T.meta['color']} "
-        + {"-": "solid curve", "--": "dashed curve", ":": "dotted curve"}[T.meta["ls"]]
+        + {
+            "-": "solid curve",
+            "--": "dashed curve",
+            ":": "dotted curve",
+            "-.": "dash-dot",
+        }[T.meta["ls"]]
         + " : \n"
     )
     if T.meta["coronagraph"] != "starshade":
@@ -100,9 +106,9 @@ ax.axhspan(1e-13, 1e-10, alpha=0.1, facecolor="k")
 plt.legend(fontsize=7, loc="lower right")
 
 plt.text(
-    11,
+    3.5,
     7e-11,
-    "Contrast performance goal $\leq$10$^{-10}$",
+    "Contrast goal $\leq$10$^{-10}$",
     horizontalalignment="left",
     alpha=0.8,
     fontsize=8,

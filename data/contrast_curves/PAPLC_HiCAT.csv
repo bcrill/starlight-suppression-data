@@ -5,7 +5,7 @@
 # - {name: y, datatype: float64}
 # meta: !!omap
 # - {courtesy: Emiel Por}
-# - {testbed: HiCAT}
+# - {testbed: HiCAT (in air)}
 # - {url: --}
 # - {reference: Por et al 2023 in prep}
 # - {color: magenta}
