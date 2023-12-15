@@ -3,7 +3,7 @@ from astropy.table import Table
 import numpy as np
 from matplotlib.ticker import ScalarFormatter
 
-version = "2023.07.14"
+version = "2023.12.11"
 output_plot_file = f"Contrast_lab_demos_{version}.png"
 output_readme_file = f"README_Contrast_lab_demos_{version}.txt"
 
@@ -16,6 +16,7 @@ fnames = [
     "PIAACMC_650nm_Belikov2022_BB.csv",
     "VVC_650nm_oneBMCDM_segPupil.csv",
     "PIAA_Tdem10_GuyonKern2014_BB.csv",
+    "SLEEC_prelim_trial53.csv",
     "PAPLC_HiCAT.csv",
 ]
 
@@ -94,8 +95,8 @@ plt.text(
 )
 
 plt.loglog()
-ax.set_xlim(0.9, 50)
-ax.set_ylim(0.7e-12, 1.1e-7)
+ax.set_xlim(0.95, 50)
+ax.set_ylim(0.7e-12, 4.1e-7)
 
 ax.set_ylabel("Normalized intensity")
 ax.set_xlabel("Angle [$\lambda$/D]")
@@ -103,8 +104,8 @@ ax.set_xlabel("Angle [$\lambda$/D]")
 
 ax.axhspan(1e-13, 1e-10, alpha=0.1, facecolor="k")
 
-plt.legend(fontsize=7, loc="lower right")
-
+plt.legend(fontsize=6, loc="lower right")
+# plt.legend(fontsize=7, loc="upper left", bbox_to_anchor=(1.05, 1.0))
 plt.text(
     3.5,
     7e-11,
@@ -153,6 +154,7 @@ for axis in [ax.xaxis, ax2.xaxis]:
     axis.set_major_formatter(ScalarFormatter())
 
 plt.suptitle("Starlight suppression broadband lab demonstrations")
+plt.tight_layout()
 plt.savefig(output_plot_file)
 
 
