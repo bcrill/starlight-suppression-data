@@ -5,7 +5,7 @@
 # - {name: y, datatype: float64}
 # meta: !!omap
 # - {courtesy: Garreth Ruane}
-# - {testbed: DST}
+# - {testbed: HCIT}
 # - {url: --}
 # - {reference: Trauger et al in prep}
 # - {color: orange}

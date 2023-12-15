@@ -3,7 +3,7 @@ from astropy.table import Table
 import numpy as np
 from matplotlib.ticker import ScalarFormatter
 
-version = "2023.12.11"
+version = "2023.12.14"
 output_plot_file = f"Contrast_lab_demos_{version}.png"
 output_readme_file = f"README_Contrast_lab_demos_{version}.txt"
 
@@ -18,6 +18,7 @@ fnames = [
     "PIAA_Tdem10_GuyonKern2014_BB.csv",
     "SLEEC_prelim_trial53.csv",
     "PAPLC_HiCAT.csv",
+    "Roman_CGI_HLC_static_milestone9.csv",
 ]
 
 

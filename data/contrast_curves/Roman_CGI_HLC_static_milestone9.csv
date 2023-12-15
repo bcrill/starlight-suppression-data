@@ -8,9 +8,9 @@
 # - {testbed: OMC}
 # - {url: 'https://exoplanets.nasa.gov/internal_resources/2266/'}
 # - {reference: CGI Milestone 9 (2017)}
-# - {color: orange}
+# - {color: pink}
 # - {pupil: Roman}
-# - {ls: --}
+# - {ls: '-'}
 # - {wl: 550 nm}
 # - {bp_pct: '10'}
 # - {DM: 2 AOX}
