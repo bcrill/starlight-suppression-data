@@ -5,13 +5,13 @@
 # - {name: y, datatype: float64}
 # meta: !!omap
 # - {courtesy: Joon Seo}
-# - {testbed: OMC}
+# - {testbed: HCIT}
 # - {url: 'https://exoplanets.nasa.gov/internal_resources/2266/'}
 # - {reference: CGI Milestone 9 (2017)}
 # - {color: pink}
 # - {pupil: Roman}
 # - {ls: '-'}
-# - {wl: 550 nm}
+# - {wl: 550}
 # - {bp_pct: '10'}
 # - {DM: 2 AOX}
 # - {coronagraph: HLC}
